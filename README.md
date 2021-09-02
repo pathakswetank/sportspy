@@ -55,6 +55,7 @@ Start state: Miss
 	from performance_evaluation.endurance import Cardio
 	Cardio.balke_treadmill_test('f',12)
 21.779999999999998
+
 	Cardio.balke_treadmill_test('m',12)
 32.318
 
