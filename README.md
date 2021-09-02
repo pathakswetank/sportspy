@@ -8,6 +8,7 @@ With context to human performance and sports analyst, in the first version:
 2. Load Monitoring
 3. Cricket
 4. Performance Evaluation
+
 	a. Cardio
 
 version="0.0.3"
@@ -19,38 +20,40 @@ pip install sportspy
 ## Usage
 
 It will be going to help sports statisticians or sports analysts and even though sports scientists analyze the team or individual athlete in terms of their fitness and performance.
+
 ###anthropometry
 
->>> from sportspy.anthropometry import Somatotype
->>> Somatotype.endomorphy(14,7,5)
+>>> 'from sportspy.anthropometry import Somatotype
+>>> 'Somatotype.endomorphy(14,7,5)
 2.6193264000000003
 
->>> from sportspy.anthropometry import Somatotype
->>> Somatotype.mesomorphy(7,8,26.2,24.2,165)
+>>> 'from sportspy.anthropometry import Somatotype
+>>> 'Somatotype.mesomorphy(7,8,26.2,24.2,165)
 2.5207999999999977
 
->>> from sportspy.anthropometry import Somatotype
->>> Somatotype.ectomorphy(165,68)
+>>> 'from sportspy.anthropometry import Somatotype
+>>> 'Somatotype.ectomorphy(165,68)
 1.0866720588698513
 
 
-###load monitoring
->>> from sportspy.load import AMS
->>> AMS.load_morning(8,40)
+###load_monitoring
+
+>>> 'from sportspy.load import AMS
+>>> 'AMS.load_morning(8,40)
    Second Week Load  Third Week Load  Fourth Week Load  ...  Chronic Load  Freshness Index  Acute Chronic Workload Ratio
 0                 0                0                 0  ...          80.0            240.0                           4.0
 
 
 ### cricket
->>> from sports.cricket import Cricket
->>> Cricket.batting_forecast(2) #Markov Chain Algorithm
+>>> 'from sports.cricket import Cricket
+>>> 'Cricket.batting_forecast(2) #Markov Chain Algorithm
 Start state: Miss
 {'Possible states': "['Miss', 'Out', 'Run']", 'End state after': '2', ' activity': 'Run', 'Probability of the possible sequence of states': '0.12'}
 
 
 ### performance_evaluation
->>> from performance_evaluation.endurance import Cardio
->>> Cardio.balke_treadmill_test('f',12)
+>>> 'from performance_evaluation.endurance import Cardio
+>>> 'Cardio.balke_treadmill_test('f',12)
 21.779999999999998
 >>> Cardio.balke_treadmill_test('m',12)
 32.318
